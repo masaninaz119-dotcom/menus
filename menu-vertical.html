@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Menú Vertical</title>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, sans-serif;
+  color: #aaaaaa;
+  margin: 0;
+}
+
+/* Cabecera */
+header {
+  background-color: #e5e5e5;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Contenedor del menú vertical */
+.menu-vertical {
+  float: left;
+  width: 20%;
+  background-color: #993;
+  height: 100vh;
+  padding-top: 20px;
+}
+
+/* Enlaces del menú */
+.menu-vertical a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  text-align: left;
+}
+
+/* Hover */
+.menu-vertical a:hover {
+  background-color: #111111;
+}
+
+/* Contenido principal */
+.main {
+  float: left;
+  width: 80%;
+  padding: 20px;
+}
+
+/* Pie de página */
+.peu {
+  background-color: #993;
+  color: white;
+  font-weight: bold;
+  text-align: center;
+  padding: 10px;
+  margin-top: 7px;
+  clear: both;
+}
+
+/* Responsive */
+@media only screen and (max-width: 620px) {
+  .menu-vertical, .main {
+    width: 100%;
+    height: auto;
+  }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Web demo de menú vertical</h1>
+</header>
+
+<div class="menu-vertical">
+  <a href="#">Home</a>
+  <a href="#">News</a>
+  <a href="#">Contact</a>
+  <a href="#">About</a>
+</div>
+
+<div class="main">
+  <h2>Lorum Ipsum</h2>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+</div>
+
+<div class="peu">
+  <a href="index.html" style="color:white; text-decoration:none;">⟵ Volver</a> | Zlata 2025
+</div>
+
+</body>
+</html>
